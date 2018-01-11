@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App render() 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="test-file-stub"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    To get started, edit 
+    <code>
+      src/App.js
+    </code>
+     and save to reload.
+  </p>
+  <Switch>
+    <Route
+      exact={true}
+      key="0"
+      path="/"
+      render={[Function]}
+    />
+    <Route
+      key="1"
+      path="/posts/:id"
+      render={[Function]}
+    />
+    <Route
+      key="2"
+      path="/users"
+      render={[Function]}
+    />
+  </Switch>
+</div>
+`;
