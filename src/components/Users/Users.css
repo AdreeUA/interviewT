@@ -1,0 +1,13 @@
+.users {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 15px 0 30px;
+}
+.users__list {
+  display: flex;
+  margin: 0 -20px;
+}
+.users__item {
+  flex: 1 1 50%;
+  margin: 0 20px;
+}
