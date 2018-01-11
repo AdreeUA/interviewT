@@ -5,20 +5,27 @@ import { ReduxThunkCb } from '../store/types'
 export const REDUCER = 'USERS'
 const NS = `${REDUCER}__`
 
+export interface UserState {
+  thumbnail: string
+  fullName: string
+  email: string
+  phone: string
+}
+
 export interface UsersState {
-  results: any[]
-  filtersResults: any[]
+  results: UserState[]
+  filtersResults: UserState[]
+  filtersData: { [key: string]: string }
   isRequestError: boolean
   isRequesting: boolean
-  filtersData: { [key: string]: string }
 }
 
 export const initialState: UsersState = {
   results: [],
   filtersResults: [],
+  filtersData: {},
   isRequestError: false,
   isRequesting: false,
-  filtersData: {},
 }
 
 const reducer = createReducer({}, initialState)

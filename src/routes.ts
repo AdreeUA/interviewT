@@ -8,7 +8,7 @@ export default [
     component: App,
     routes: [
       {
-        path: '/',
+        path: '/posts',
         exact: true,
         component: Posts,
       },
@@ -17,7 +17,7 @@ export default [
         component: Post,
       },
       {
-        path: '/users',
+        path: '/',
         component: Users,
       },
     ],

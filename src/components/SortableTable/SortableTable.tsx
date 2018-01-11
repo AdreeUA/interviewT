@@ -2,7 +2,7 @@ import React from 'react'
 import { Dispatch, connect } from 'react-redux'
 import * as _ from 'lodash'
 import { StoreState } from '../../store/types'
-import { setFilterData, filterUsers } from '../../ducks/users'
+import { UserState, setFilterData, filterUsers } from '../../ducks/users'
 import Header from './Header'
 import Body from './Body'
 
@@ -11,7 +11,7 @@ import './SortableTable.css'
 interface OwnProps {}
 
 interface ConnectedState {
-  usersFilters: any[]
+  usersFilters: UserState[]
   isRequesting: boolean
 }
 

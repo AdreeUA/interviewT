@@ -2,14 +2,14 @@ import React from 'react'
 import { Dispatch, connect } from 'react-redux'
 import * as _ from 'lodash'
 import { StoreState } from '../../store/types'
-import { load as userLoad } from '../../ducks/users'
+import { load as userLoad, UserState } from '../../ducks/users'
 
 import './List.css'
 
 interface OwnProps {}
 
 interface ConnectedState {
-  users: any[]
+  users: UserState[]
   isRequesting: boolean
 }
 
@@ -60,7 +60,7 @@ const WrappedList = connect<ConnectedState, ConnectedDispatch, OwnProps>(mapStat
               </tr>
             </thead>
             <tbody>
-              {users.map(({ id, fullName, thumbnail, email, phone }) => {
+              {users.map(({ fullName, thumbnail, email, phone }) => {
                 return (
                   <tr key={email}>
                     <td>

@@ -2,7 +2,11 @@ import React from 'react'
 import * as _ from 'lodash'
 
 interface Props {
-  columns: any[]
+  columns: {
+    label: string
+    key: string
+    sort?: boolean
+  }[]
   onChangeSearch: (key: string) => any
 }
 

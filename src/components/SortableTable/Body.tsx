@@ -1,8 +1,9 @@
 import React from 'react'
 import * as _ from 'lodash'
+import { UserState } from '../../ducks/users'
 
 interface Props {
-  data: any[]
+  data: UserState[]
 }
 
 interface State {}
