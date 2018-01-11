@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List render() with completed state 1`] = `
+<div
+  className="user-list"
+>
+  <table
+    className="table user-list__table"
+  >
+    <thead>
+      <tr>
+        <th
+          key="Image"
+        >
+          Image
+        </th>
+        <th
+          key="Name"
+        >
+          Name
+        </th>
+        <th
+          key="Email"
+        >
+          Email
+        </th>
+        <th
+          key="Phone"
+        >
+          Phone
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        key="ariane.scott@example.com"
+      >
+        <td>
+          <div
+            className="table__image-wrapper"
+          >
+            <img
+              alt="mrs ariane scott"
+              className="table__image"
+              src="https://randomuser.me/api/portraits/thumb/women/5.jpg"
+            />
+          </div>
+        </td>
+        <td
+          className="table__name"
+        >
+          mrs ariane scott
+        </td>
+        <td>
+          ariane.scott@example.com
+        </td>
+        <td>
+          563-392-7975
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    Add user
+  </button>
+</div>
+`;
+
+exports[`List render() with initialState 1`] = `
+<div
+  className="user-list"
+>
+  <table
+    className="table user-list__table"
+  >
+    <thead>
+      <tr>
+        <th
+          key="Image"
+        >
+          Image
+        </th>
+        <th
+          key="Name"
+        >
+          Name
+        </th>
+        <th
+          key="Email"
+        >
+          Email
+        </th>
+        <th
+          key="Phone"
+        >
+          Phone
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+  <div
+    className="user-list__text text"
+  >
+    Empty table
+  </div>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    Add user
+  </button>
+</div>
+`;
+
+exports[`List render() with requesting 1`] = `
+<div
+  className="user-list"
+>
+  <table
+    className="table user-list__table"
+  >
+    <thead>
+      <tr>
+        <th
+          key="Image"
+        >
+          Image
+        </th>
+        <th
+          key="Name"
+        >
+          Name
+        </th>
+        <th
+          key="Email"
+        >
+          Email
+        </th>
+        <th
+          key="Phone"
+        >
+          Phone
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        key="ariane.scott@example.com"
+      >
+        <td>
+          <div
+            className="table__image-wrapper"
+          >
+            <img
+              alt="mrs ariane scott"
+              className="table__image"
+              src="https://randomuser.me/api/portraits/thumb/women/5.jpg"
+            />
+          </div>
+        </td>
+        <td
+          className="table__name"
+        >
+          mrs ariane scott
+        </td>
+        <td>
+          ariane.scott@example.com
+        </td>
+        <td>
+          563-392-7975
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="user-list__text text"
+  >
+    Loading...
+  </div>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    Add user
+  </button>
+</div>
+`;

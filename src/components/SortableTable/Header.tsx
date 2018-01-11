@@ -1,36 +1,69 @@
 import React from 'react'
-import * as _ from 'lodash'
+import { Dispatch, connect } from 'react-redux'
+import { StoreState } from '../../store/types'
+import { setFilterData, filterUsers } from '../../ducks/users'
 
-interface Props {
-  columns: {
-    label: string
-    key: string
-    sort?: boolean
-  }[]
-  onChangeSearch: (key: string) => any
+interface OwnProps {}
+
+interface ConnectedState {}
+
+interface ConnectedDispatch {
+  dispatch: Dispatch<StoreState>
 }
+
+type Props = OwnProps & ConnectedState & ConnectedDispatch
 
 interface State {}
 
-class Header extends React.Component<Props, State> {
-  render() {
-    const { columns } = this.props
-    return (
-      <thead>
-        <tr>
-          {!_.isEmpty(columns) &&
-            columns.map((item) => {
+const mapStateToProps = (state: StoreState) => ({})
+
+const WrappedHeader = connect<ConnectedState, ConnectedDispatch, OwnProps>(mapStateToProps)(
+  class Header extends React.Component<Props, State> {
+    tableColumns: { label: string; key: string; sort?: boolean }[] = [
+      {
+        label: 'Image',
+        key: 'thumbnail',
+      },
+      {
+        label: 'Name',
+        sort: true,
+        key: 'fullName',
+      },
+      {
+        label: 'Email',
+        sort: true,
+        key: 'email',
+      },
+      {
+        label: 'Phone',
+        sort: true,
+        key: 'phone',
+      },
+    ]
+
+    handleChangeSearch = (key: string) => (event: React.SyntheticEvent<any>) => {
+      const value = event.currentTarget.value
+      this.props.dispatch(setFilterData({ [key]: value }))
+      this.props.dispatch(filterUsers())
+    }
+
+    render() {
+      return (
+        <thead>
+          <tr>
+            {this.tableColumns.map((item) => {
               return (
                 <th key={item.key} className={`table__header-${item.key}`}>
                   {item.label}
-                  {item.sort && <input className="table__input" onChange={this.props.onChangeSearch(item.key)} />}
+                  {item.sort && <input className="table__input" onChange={this.handleChangeSearch(item.key)} />}
                 </th>
               )
             })}
-        </tr>
-      </thead>
-    )
-  }
-}
+          </tr>
+        </thead>
+      )
+    }
+  },
+)
 
-export default Header
+export default WrappedHeader

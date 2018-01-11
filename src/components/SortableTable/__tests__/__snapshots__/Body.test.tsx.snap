@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body render() whith compteted state 1`] = `
+<tbody>
+  <tr
+    key="ariane.scott@example.com"
+  >
+    <td>
+      <div
+        className="table__image-wrapper"
+      >
+        <img
+          alt="mrs ariane scott"
+          className="table__image"
+          src="https://randomuser.me/api/portraits/thumb/women/5.jpg"
+        />
+      </div>
+    </td>
+    <td
+      className="table__name"
+    >
+      mrs ariane scott
+    </td>
+    <td>
+      ariane.scott@example.com
+    </td>
+    <td>
+      563-392-7975
+    </td>
+  </tr>
+</tbody>
+`;
+
+exports[`Body render() whith initialState 1`] = `<tbody />`;

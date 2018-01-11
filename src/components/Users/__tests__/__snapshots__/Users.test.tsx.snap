@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Users render() whith initialState 1`] = `
+<div
+  className="users"
+>
+  <h2>
+    Users
+  </h2>
+  <div
+    className="users__list"
+  >
+    <div
+      className="users__item"
+    >
+      <Connect(List) />
+    </div>
+    <div
+      className="users__item"
+    >
+      <Connect(SortableTable) />
+    </div>
+  </div>
+</div>
+`;

@@ -31,7 +31,7 @@ exports[`App render() 1`] = `
     <Route
       exact={true}
       key="0"
-      path="/"
+      path="/posts"
       render={[Function]}
     />
     <Route
@@ -41,7 +41,7 @@ exports[`App render() 1`] = `
     />
     <Route
       key="2"
-      path="/users"
+      path="/"
       render={[Function]}
     />
   </Switch>

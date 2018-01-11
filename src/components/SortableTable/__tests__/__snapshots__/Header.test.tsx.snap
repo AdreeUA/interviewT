@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header render() with initialState 1`] = `
+<thead>
+  <tr>
+    <th
+      className="table__header-thumbnail"
+      key="thumbnail"
+    >
+      Image
+    </th>
+    <th
+      className="table__header-fullName"
+      key="fullName"
+    >
+      Name
+      <input
+        className="table__input"
+        onChange={[Function]}
+      />
+    </th>
+    <th
+      className="table__header-email"
+      key="email"
+    >
+      Email
+      <input
+        className="table__input"
+        onChange={[Function]}
+      />
+    </th>
+    <th
+      className="table__header-phone"
+      key="phone"
+    >
+      Phone
+      <input
+        className="table__input"
+        onChange={[Function]}
+      />
+    </th>
+  </tr>
+</thead>
+`;

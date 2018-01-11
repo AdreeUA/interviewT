@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortableTable render() with completed state 1`] = `
+<div
+  className="sortable-table"
+>
+  <table
+    className="table sortable-table__table"
+  >
+    <Connect(Header) />
+    <Body
+      data={
+        Array [
+          Object {
+            "email": "ariane.scott@example.com",
+            "fullName": "mrs ariane scott",
+            "phone": "563-392-7975",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/5.jpg",
+          },
+        ]
+      }
+    />
+  </table>
+</div>
+`;
+
+exports[`SortableTable render() with initialState 1`] = `
+<div
+  className="sortable-table"
+>
+  <table
+    className="table sortable-table__table"
+  >
+    <Connect(Header) />
+    <Body
+      data={Array []}
+    />
+  </table>
+  <div
+    className="sortable-table__text text"
+  >
+    Empty filters table
+  </div>
+</div>
+`;
+
+exports[`SortableTable render() with requesting 1`] = `
+<div
+  className="sortable-table"
+>
+  <table
+    className="table sortable-table__table"
+  >
+    <Connect(Header) />
+    <Body
+      data={
+        Array [
+          Object {
+            "email": "ariane.scott@example.com",
+            "fullName": "mrs ariane scott",
+            "phone": "563-392-7975",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/5.jpg",
+          },
+        ]
+      }
+    />
+  </table>
+  <div
+    className="sortable-table__text text"
+  >
+    Loading...
+  </div>
+</div>
+`;
